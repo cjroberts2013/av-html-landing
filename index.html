@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple, affordable, and secure way to engage your members during election season." />
+    <link rel="icon" href="./images/av-fav.ico" type="image/ico">
+    <link rel="alternate icon" href="./images/av-fav.ico" />
+    <link href="/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Associationg Voting</title>
+</head>
+<body>
+    <div class="relative bg-white overflow-hidden">
+        <div class="hidden lg:block lg:absolute lg:inset-0" aria-hidden="true">
+          <svg class="absolute top-0 left-1/2 transform translate-x-64 -translate-y-8" width="640" height="784" fill="none" viewBox="0 0 640 784">
+            <defs>
+              <pattern id="9ebea6f4-a1f5-4d96-8c4e-4c2abf658047" x="118" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect y="72" width="640" height="640" class="text-gray-50" fill="currentColor" />
+            <rect x="118" width="404" height="784" fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)" />
+          </svg>
+        </div>
+      
+        <div class="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
+          <div>
+            <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
+              <div class="flex items-center flex-1">
+                <div class="flex items-center justify-between w-full md:w-auto">
+                  <a href="#">
+                    <span class="sr-only">Workflow</span>
+                    <img class="h-8 w-auto sm:h-10" src="./images/av-logo.png" alt="Company logo">
+                  </a>
+                  <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="open-btn bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                      <span class="sr-only">Open main menu</span>
+                      <!-- Heroicon name: outline/menu -->
+                      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="hidden md:block md:ml-8 md:space-x-8">
+                  <a target="_blank" href="https://www.associationvoting.com/" class="font-medium text-gray-500 hover:text-gray-900">Home</a>
+      
+                  <a target="_blank" href="https://www.associationvoting.com/features/" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
+      
+                  <a target="_blank" href="https://www.associationvoting.com/get-started/pricing/" class="font-medium text-gray-500 hover:text-gray-900">Pricing</a>
+                </div>
+              </div>
+              <div class="hidden md:block text-right">
+                <span class="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
+                  <a href="tel:877-886-8464" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50">
+                    Call: 877-886-8464
+                  </a>
+                </span>
+              </div>
+            </nav>
+      
+            <!--
+              Mobile menu, show/hide based on menu open state.
+      
+              Entering: "duration-150 ease-out"
+                From: "opacity-0 scale-95"
+                To: "opacity-100 scale-100"
+              Leaving: "duration-100 ease-in"
+                From: "opacity-100 scale-100"
+                To: "opacity-0 scale-95"
+            -->
+            <div class="mobile-menu absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+              <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                <div class="px-5 pt-4 flex items-center justify-between">
+                  <div>
+                    <img class="h-8 w-auto" src="./images/av-logo.png" alt="Company logo">
+                  </div>
+                  <div class="-mr-2">
+                    <button type="button" class="close-btn bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
+                      <span class="sr-only">Close main menu</span>
+                      <!-- Heroicon name: outline/x -->
+                      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                  <a target="_blank" href="https://www.associationvoting.com/" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</a>
+      
+                  <a target="_blank" href="https://www.associationvoting.com/features/" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
+      
+                  <a target="_blank" href="https://www.associationvoting.com/get-started/pricing/" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Pricing</a>
+                </div>
+                <a href="tel:877-886-8464" class="block w-full px-5 py-3 text-center font-medium text-blue-600 bg-gray-50 hover:bg-gray-100">
+                  Call Today: 877-886-8464
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+              <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+                <h1>
+                  <span class="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">Simple, affordable and secure</span>
+                  <span class="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
+                    <span class="block text-gray-900">Online Voting</span>
+                    <span class="block text-blue-600">Made Simple</span>
+                  </span>
+                </h1>
+                <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                    Engage your members during election season and manage your process on a web-based personalised solution.
+                </p>
+                <div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
+                  <p class="mt-3 text-sm text-gray-500">
+                    <a
+                        href="https://www.associationvoting.com/free-trial/"
+                        target="_blank"
+                        class="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:mt-0 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto"
+                        >
+                        Get Free Trial
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+                <img src="./images/macbook-frame2.png" alt="Company software shown on laptop and smartphone">
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <!-- END OF HERO -->
+      <!-- SERVICES -->
+
+      <div class="bg-white overflow-hidden">
+        <div class="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+          <svg class="absolute top-0 left-full transform -translate-x-1/2 -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
+            <defs>
+              <pattern id="8b1b5f72-e944-4457-af67-0c6d15a99f38" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="404" height="784" fill="url(#8b1b5f72-e944-4457-af67-0c6d15a99f38)" />
+          </svg>
+      
+          <div class="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
+            <div class="lg:col-span-1">
+              <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Why choose AssociationVoting?
+              </h2>
+            </div>
+            <dl class="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
+              <div>
+                <dt>
+                  <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                    <!-- Heroicon name: outline/user-group -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                  </div>
+                  <p class="mt-5 text-lg leading-6 font-medium text-gray-900">Maximize Voter Turnout</p>
+                </dt>
+                <dd class="mt-2 text-base text-gray-500">
+                    To increase voter turnout in your next election, you need to drive election awareness EARLY and make the voting process simple and timely for your members with Association Voting’s online services! At AssociationVoting.com, we help you drive awareness of your election and simplify your voting process to drive up voter turnout.
+                </dd>
+              </div>
+      
+              <div>
+                <dt>
+                  <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                    <!-- Heroicon name: outline/currency-dollar -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <p class="mt-5 text-lg leading-6 font-medium text-gray-900">Save Time and Money</p>
+                </dt>
+                <dd class="mt-2 text-base text-gray-500">
+                    When the alternative is a paper ballot, our answer is simple: You will save money and get a better return with online voting. Not ready to fully commit to an online election? A Hybrid Election is a smart alternative to 100% paper. It allows you to save money and increase the voter turnout with an online option while limiting your paper expense.
+                </dd>
+              </div>
+      
+              <div>
+                <dt>
+                  <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                    <!-- Heroicon name: outline/lock-closed -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                  </div>
+                  <p class="mt-5 text-lg leading-6 font-medium text-gray-900">Secure and Convenient</p>
+                </dt>
+                <dd class="mt-2 text-base text-gray-500">
+                    At Associationvoting.com, we take you and your online ballot security very seriously! AssociationVoting.com uses industry-standard 256-Bit SSL encryption for all election access – both for you and your voters. We also employ a number of external security scanning and auditing services to verify our software’s security.
+                </dd>
+              </div>
+      
+              <div>
+                <dt>
+                  <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                    <!-- Heroicon name: outline/mail -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <p class="mt-5 text-lg leading-6 font-medium text-gray-900">Email Campaigns and Reminders</p>
+                </dt>
+                <dd class="mt-2 text-base text-gray-500">
+                  Veniam necessitatibus reiciendis fugit explicabo dolorem nihil et omnis assumenda odit? Quisquam unde accusantium.
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <!-- END OF SERVICES -->
+      <script>
+            var openBtn = document.querySelector(".open-btn");
+            var closeBtn = document.querySelector(".close-btn");
+            var mobileMenu = document.querySelector(".mobile-menu");
+
+            var openMenu = () => {
+                openBtn.style.display = "none";
+                closeBtn.style.display = "block";
+                mobileMenu.style.display = "block";
+            }
+
+            var closeMenu = () => {
+                openBtn.style.display = "block";
+                closeBtn.style.display = "none";
+                mobileMenu.style.display  ="none";
+            }
+
+            openBtn.addEventListener("click", () => {
+                openMenu();
+            })
+            
+            closeBtn.addEventListener("click", () => {
+                closeMenu();
+            })
+
+            closeMenu();
+      </script>
+</body>
+</html>
